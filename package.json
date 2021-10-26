@@ -1,0 +1,31 @@
+{
+  "name": "tsproject",
+  "version": "1.0.0",
+  "description": "my first typescript project",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rd -r public\\scripts 2>null & tsc",
+    "build:dev": "rd -r public\\scripts 2>null & tsc -p tsconfig-dev.json",
+    "start": "http-server -p 3000",
+    "lint": "eslint src --ext .js --ext .ts",
+    "lint-fix": "eslint src --ext .js --ext .ts --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anu-tochka/tsproject.git"
+  },
+  "author": "AnnA Ovchinnikova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anu-tochka/tsproject/issues"
+  },
+  "homepage": "https://github.com/Anu-tochka/tsproject#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.2.0",
+    "@typescript-eslint/parser": "^5.2.0",
+    "eslint": "^8.1.0",
+    "http-server": "^14.0.0",
+    "typescript": "^4.4.4"
+  }
+}
