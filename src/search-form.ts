@@ -39,3 +39,27 @@ export function renderSearchFormBlock () {
     `
   )
 }
+
+interface SearchFormData {
+  city: string
+  provider: string
+  dateStart: string
+  dateEnd: string
+  price: number
+}
+
+// функцияобработчик формы
+export function getSearchData (
+  city: string
+  provider: string
+  dateStart: string
+  dateEnd: string
+  price: number) {
+	search( city,  provider,  dateStart,  dateEnd,  price) 
+  }
+
+//  функция поиска  
+export function search (SearchFormData) {
+	console.log(SearchFormData)  
+  }
+  
