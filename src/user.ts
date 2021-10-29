@@ -5,6 +5,9 @@ export function renderUserBlock (name: string,avatar: string,favoriteItemsAmount
   const hasFavoriteItems = favoriteItemsAmount ? true : false
   const userName = name ? name : "Wade Warren"
   const userAvatar = avatar ? avatar : "/img/avatar.png"
+  
+  if (favoritesCaption == 'ничего нет') hasFavoriteItems = ''
+  else hasFavoriteItems = ' active'
 
   renderBlock(
     'user-block',
