@@ -48,7 +48,7 @@ interface SearchFormData {
   price: number
 }
 
-// функцияобработчик формы
+// функция обработчик формы
 export function getSearchData (
   city: string
   provider: string
@@ -62,4 +62,5 @@ export function getSearchData (
 export function search (SearchFormData) {
 	console.log(SearchFormData)  
   }
+
   
