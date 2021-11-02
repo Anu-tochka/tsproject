@@ -1,7 +1,8 @@
-import { renderSearchFormBlock } from './search-form.js'
-import { renderSearchStubBlock } from './search-results.js'
-import { renderUserBlock } from './user.js'
-import { renderToast } from './lib.js'
+import { renderSearchFormBlock } from './search-form.ts'
+import { renderSearchStubBlock } from './search-results.ts'
+import { renderUserBlock } from './user.ts'
+import { renderToast } from './lib.ts'
+import { Place } from './place.ts'
 
 window.addEventListener('DOMContentLoaded', () => {
   renderUserBlock('0')
