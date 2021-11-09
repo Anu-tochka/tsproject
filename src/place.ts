@@ -1,4 +1,4 @@
-import { search } from './search-form.ts'
+import { search } from './search-form.js'
 
 export interface Place<Type> {
   [key: string]: Type  
